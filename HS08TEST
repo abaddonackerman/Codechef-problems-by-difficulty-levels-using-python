@@ -1,0 +1,13 @@
+try:
+    def balance(withdraw, accBalance):
+        if withdraw % 5 == 0 and withdraw + 0.5 <= accBalance:
+            accBalance -= withdraw + 0.5
+            return accBalance
+        else:
+            return accBalance
+        
+    withdraw,accBalance = map(float, input().split())
+    print(balance(withdraw, accBalance))
+    
+except:
+    pass
