@@ -1,0 +1,12 @@
+n, k = map(int, input().split())
+m = []
+count = 0
+for i in range(n):
+  a = int(input())
+  m.append(a)
+
+for i in m:
+    if i % k == 0:
+        count += 1
+        
+print(count)
